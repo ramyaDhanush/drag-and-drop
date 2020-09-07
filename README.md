@@ -17,11 +17,15 @@ To show different effect while dragging, change opacity of the dragging element
 
 Get all draggable Contents present (i.e., HTML tags with class draggable, also set those elements draggable attribute as true)
 
-`const draggables = document.querySelectorAll(".draggable");`
+```javascript
+const draggables = document.querySelectorAll(".draggable");
+```
 
 Get all containers present 
 
-`const containers = document.querySelectorAll(".container");`
+```javascript
+const containers = document.querySelectorAll(".container");
+```
 
 Set event listeners to monitor dragging action
 
