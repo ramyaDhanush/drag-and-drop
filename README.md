@@ -13,6 +13,7 @@ To drag an html element, set attribute draggable as true in html tag
 To show different effect while dragging, change opacity of the dragging element
 
 ### script.css
+------
 
 Get all draggable Contents present (i.e., HTML tags with class draggable, also set those elements draggable attribute as true)
 
@@ -21,3 +22,19 @@ Get all draggable Contents present (i.e., HTML tags with class draggable, also s
 Get all containers present 
 
 `const containers = document.querySelectorAll(".container");`
+
+Set event listeners to monitor dragging action
+
+For start of drag `dragstart` event and for end of drag `dragend`
+
+```draggables.forEach((draggable) => {
+  draggable.addEventListener("dragstart", () => {
+    draggable.classList.add("dragging");
+  });
+
+  draggable.addEventListener("dragend", () => {
+    draggable.classList.remove("dragging");
+  });
+});```
+
+
