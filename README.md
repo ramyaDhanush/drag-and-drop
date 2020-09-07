@@ -38,5 +38,6 @@ draggables.forEach((draggable) => {
   draggable.addEventListener("dragend", () => {
     draggable.classList.remove("dragging");
   });
-});```
+});
+```
 
