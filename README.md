@@ -27,7 +27,7 @@ Set event listeners to monitor dragging action
 
 For start of drag `dragstart` event and for end of drag `dragend`
 
-```draggables.forEach((draggable) => {
+`draggables.forEach((draggable) => {
   draggable.addEventListener("dragstart", () => {
     draggable.classList.add("dragging");
   });
@@ -35,6 +35,6 @@ For start of drag `dragstart` event and for end of drag `dragend`
   draggable.addEventListener("dragend", () => {
     draggable.classList.remove("dragging");
   });
-});```
+});`
 
 
